@@ -152,7 +152,3 @@ describe( "Item 7: Think of Strings As Sequences of 16-Bit Code Units", function
 		expect(pooHasLengthOf1()).toBe(true);
 	});
 });
-
-
-
-
