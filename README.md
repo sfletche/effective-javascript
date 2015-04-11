@@ -1,5 +1,5 @@
 # effective-javascript
 
-Thought I'd experiment with Jasmine and some of the concepts in Effective Javascript by David Herman.
+An experiment with Jasmine and the 68 Items explained in the excellent book "Effective Javascript" by David Herman.
 
-Creating broken tests in which the solutions reflect some of the 68 approaches offered in Herman's book. 
+Creating broken tests in which the solutions reflect the 68 concepts explained in Herman's book. 
