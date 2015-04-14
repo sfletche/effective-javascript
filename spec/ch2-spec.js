@@ -73,11 +73,50 @@ describe( "Item 11: Get Comfotable with Closures...", function() {
 });
 
 describe( "Item 12: Understand Variable Hoisting...", function() {
+	var isWinner = function(player, others) {
+	    var highest = 0;
+	    for (var i = 0, n = others.length; i < n; i++) {
+	        var player = others[i]; // same scope as player parameter!
+	        if (player.score > highest) {
+	            highest = player.score;
+	        }
+	    }
+	    return player.score > highest;
+	};
+	var checkWinner = function() {
+		var player = {
+			score: 23
+		};
+		var others = [{
+			score: 18
+		}, {
+			score: 21
+		}, {
+			score: 15
+		}];
+		return isWinner(player, others);
+	};
 
+	it("checkWinner() should return true", function() {
+		expect(checkWinner()).toBe(true);
+	});
 });
 
 describe( "Item 13: Use Immediately Invoked Function Expressions to Create Local Scopes...", function() {
+	var wrapElements =  function(a) {
+	    var result = [], i, n;
+	    for (i = 0, n = a.length; i < n; i++) {
+	        result[i] = function() { return a[i]; };
+	    }
+	    return result;
+	}
 
+	var wrapped = wrapElements([10, 20, 30, 40, 50]);
+	var f = wrapped[0];
+	
+	it("f() should return 10", function() {
+		expect(f()).toBe(10);
+	})
 });
 
 describe( "Item 14: Beware of Unportable Scoping of Named Function Expressions...", function() {
