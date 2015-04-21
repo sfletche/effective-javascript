@@ -10,3 +10,7 @@ describe( "Item 44: Use null Prototypes to Prevent Prototype Pollution...", func
 describe( "Item 45: Use hasOwnProperty to Protect Against Prototype Pollution...", function() {
 
 });
+
+describe( "Item 46: Prefer Arrays to Dictionaries for Ordered Collections...", function() {
+
+});
