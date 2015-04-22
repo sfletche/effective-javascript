@@ -14,3 +14,7 @@ describe( "Item 45: Use hasOwnProperty to Protect Against Prototype Pollution...
 describe( "Item 46: Prefer Arrays to Dictionaries for Ordered Collections...", function() {
 
 });
+
+describe( "Item 47: Never Add Enumerable Properties to Object.prototype...", function() {
+
+});
