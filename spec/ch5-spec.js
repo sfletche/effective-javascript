@@ -18,3 +18,7 @@ describe( "Item 46: Prefer Arrays to Dictionaries for Ordered Collections...", f
 describe( "Item 47: Never Add Enumerable Properties to Object.prototype...", function() {
 
 });
+
+describe( "Item 48: Avoid Modifying an Object during Enumeration...", function() {
+
+});
