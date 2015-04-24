@@ -22,3 +22,11 @@ describe( "Item 47: Never Add Enumerable Properties to Object.prototype...", fun
 describe( "Item 48: Avoid Modifying an Object during Enumeration...", function() {
 
 });
+
+desribe( "Item 49: Prefer for Loops to for...in Loops for Array Iteration...", function() {
+
+});
+
+describe( "Item 50: Prefer Iteration Methods to Loops...", function() {
+
+});
