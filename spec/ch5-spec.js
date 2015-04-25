@@ -30,3 +30,7 @@ desribe( "Item 49: Prefer for Loops to for...in Loops for Array Iteration...", f
 describe( "Item 50: Prefer Iteration Methods to Loops...", function() {
 
 });
+
+describe( "Item 51: Reuse Generic Array Methods on Array-Like Objects...", function() {
+
+});
