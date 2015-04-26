@@ -34,3 +34,7 @@ describe( "Item 50: Prefer Iteration Methods to Loops...", function() {
 describe( "Item 51: Reuse Generic Array Methods on Array-Like Objects...", function() {
 
 });
+
+describe( "Item 52: Prefer Array Literals to the Array Constructor...", function( {
+
+}));
