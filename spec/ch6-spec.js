@@ -10,3 +10,8 @@ describe( "Item 54: Treat undefined As 'No Value'...", function() {
 describe( "Item 55: Accept Options Objects for Keyword Arguments...", function() {
 
 });
+
+describe( "Item 56: Avoid Unnecessary State...", function() {
+
+});
+
