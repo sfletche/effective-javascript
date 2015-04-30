@@ -15,3 +15,7 @@ describe( "Item 56: Avoid Unnecessary State...", function() {
 
 });
 
+describe( "Item 57: Use Structural Typing for Flexible Interfaces...", function() {
+
+});
+
