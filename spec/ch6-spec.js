@@ -19,3 +19,11 @@ describe( "Item 57: Use Structural Typing for Flexible Interfaces...", function(
 
 });
 
+describe( "Item 58: Distinguish Between Array and Array-Like...", function() {
+
+});
+
+describe( "Item 59: Avoid Excessive Coercion...", function() {
+
+});
+
