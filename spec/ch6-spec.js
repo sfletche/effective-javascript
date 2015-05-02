@@ -27,3 +27,7 @@ describe( "Item 59: Avoid Excessive Coercion...", function() {
 
 });
 
+describe( "Item 60: Support Method Chaining...", function() {
+
+});
+
