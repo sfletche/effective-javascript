@@ -18,3 +18,7 @@ describe( "Item 64: Use Recursion for Asynchronous Loops...", function() {
 describe( "Item 65: Don't Block the Event Queue on Computation...", function() {
 	
 });
+
+describe( "Item 66: Use a Counter to Perform Concurrent Operations...", function() {
+	
+});
