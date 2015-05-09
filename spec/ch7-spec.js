@@ -22,3 +22,7 @@ describe( "Item 65: Don't Block the Event Queue on Computation...", function() {
 describe( "Item 66: Use a Counter to Perform Concurrent Operations...", function() {
 	
 });
+
+describe( "Item 67: Never Call Asynchronous Callbacks Synchronously...", function() {
+	
+});
