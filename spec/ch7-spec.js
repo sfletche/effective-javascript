@@ -26,3 +26,7 @@ describe( "Item 66: Use a Counter to Perform Concurrent Operations...", function
 describe( "Item 67: Never Call Asynchronous Callbacks Synchronously...", function() {
 	
 });
+
+describe( "Item 68: Use Promises for Cleaner Asynchronous Logic...", function() {
+	
+});
