@@ -1,33 +1,8 @@
 
+
 describe( "Item 1: Know Which Javascript You Are Using...", function() {
-
-	var amIUsingES6 = function() {
-		// check for template strings
-		var no = "Yes!";
-		return "${no}" === "Yes!";
-	};
-	var amIUsingES5 = function() {
-		// check trailing commas
-		var obj = { 
-			a: 1,
-			b: 2,
-		};
-		return true;
-	};
-	var whichJS = function() {
-		var es3, es5, es6;
-		if (amIUsingES6) {
-			es6 = true;
-		} else if(amIUsingEs5) {
-			es5 = true;
-		} else {
-			es3 = true;
-		}
-		return es3;
-	};
-
-	it("whichJS() should return true", function() {
-		expect(whichJS()).toBe(true);
+	it("ch1.whichJS() should return true", function() {
+		expect(ch1.whichJS()).toBe(true);
 	});
 });
 
