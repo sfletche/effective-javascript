@@ -1,40 +1,22 @@
 
 
 describe( "Item 1: Know Which Javascript You Are Using...", function() {
-	it("ch1.whichJS() should return true", function() {
+	it("whichJS() should return true", function() {
 		expect(ch1.whichJS()).toBe(true);
 	});
 });
 
 describe( "Item 2: Understand Javascript's Floating Point Numbers...", function() {
-
-	var checkEquality = function() {
-		var a = .1,
-			b = .2,
-			c = a + b;
-		return c === .3;
-	};
-
 	it("checkEquality() should return true", function() {
-		expect(checkEquality()).toBe(true);
+		expect(ch1.checkEquality()).toBe(true);
 	});
 });	
 
 describe( "Item 3: Beware of Implicit Coercion...", function () {
-
-	var point = function(x, y) {
-		x = x || 5;
-		y = y || 5;
-		return { x: x, y: y };
-	}
-
-	it("calling point() should create default point = (5,5)", function() {
-		expect(point().x).toBe(5);
-		expect(point().y).toBe(5);
-	});
 	it("calling point(0,0) should create point = (0,0)", function() {
-		expect(point(0, 0).x).toBe(0);
-		expect(point(0, 0).y).toBe(0);
+		var p1 = ch1.point(0, 0);
+		expect(p1.x).toBe(0);
+		expect(p1.y).toBe(0);
 	});
 });
 

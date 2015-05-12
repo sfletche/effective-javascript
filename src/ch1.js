@@ -33,11 +33,32 @@ var ch1 = function() {
 	}();
 
 	var item_2 = function() {
+		var checkEquality = function() {
+			var a = .1,
+				b = .2,
+				c = a + b;
+			return c === .3;
+		};
+		return {
+			checkEquality: checkEquality
+		};
+	}();
 
+	var item_3 = function() {		
+		var point = function(x, y) {
+			x = x || 5;
+			y = y || 5;
+			return { x: x, y: y };
+		};
+		return {
+			point: point
+		};
 	}();
 
 	return {
-		whichJS: item_1.whichJS
+		whichJS: item_1.whichJS,
+		checkEquality: item_2.checkEquality,
+		point: item_3.point
 	};
 
 }();
