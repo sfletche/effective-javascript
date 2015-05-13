@@ -7,8 +7,8 @@ describe( "Item 1: Know Which Javascript You Are Using...", function() {
 });
 
 describe( "Item 2: Understand Javascript's Floating Point Numbers...", function() {
-	it("checkEquality() should return true", function() {
-		expect(ch1.checkEquality()).toBe(true);
+	it("checkFloatingPointEquality() should return true", function() {
+		expect(ch1.checkFloatingPointEquality()).toBe(true);
 	});
 });	
 
@@ -21,19 +21,11 @@ describe( "Item 3: Beware of Implicit Coercion...", function () {
 });
 
 describe( "Item 4: Prefer Primitives to Object Wrappers...", function () {
-
-	var checkType = function() {
-		return typeof new String('foo') === 'string';
-	};
-	var checkEquality = function() {
-		return new String('foo') === new String('foo');
-	};
-
 	it("'foo' should be of type string", function() {
-		expect(checkType()).toBe(true);
+		expect(ch1.checkType()).toBe(true);
 	});
 	it("'foo' should equal itself", function() {
-		expect(checkEquality()).toBe(true);
+		expect(ch1.checkStringEquality()).toBe(true);
 	});
 });
 

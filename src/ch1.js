@@ -1,5 +1,6 @@
 var ch1 = function() {
 
+	// Return a function, whichJS() that returns true after determining which JS you are using
 	var item_1 = function() {
 		var amIUsingES6 = function() {
 			// check for template strings
@@ -32,6 +33,7 @@ var ch1 = function() {
 		};
 	}();
 
+	// Write function, checkEquality(), that explores the ambiguities of floating point addition
 	var item_2 = function() {
 		var checkEquality = function() {
 			var a = .1,
@@ -44,6 +46,7 @@ var ch1 = function() {
 		};
 	}();
 
+	// Write a function, point(x,y), that defaults to (5,5) when no arguments are provided
 	var item_3 = function() {		
 		var point = function(x, y) {
 			x = x || 5;
@@ -55,10 +58,27 @@ var ch1 = function() {
 		};
 	}();
 
+	// Write 2 functions, checkType() that determines the type of a new String object,
+	// and checkEquality(), that checks to see if 2 new String objects are equal
+	var item_4 = function() {
+		var checkType = function() {
+			return typeof new String('foo') === 'string';
+		};
+		var checkEquality = function() {
+			return new String('foo') === new String('foo');
+		};
+		return {
+			checkType: checkType,
+			checkEquality: checkEquality
+		}
+	}();
+
 	return {
 		whichJS: item_1.whichJS,
-		checkEquality: item_2.checkEquality,
-		point: item_3.point
+		checkFloatingPointEquality: item_2.checkEquality,
+		point: item_3.point,
+		checkType: item_4.checkType,
+		checkStringEquality: item_4.checkEquality
 	};
 
 }();
