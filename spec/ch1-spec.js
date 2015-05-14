@@ -30,17 +30,6 @@ describe( "Item 4: Prefer Primitives to Object Wrappers...", function () {
 });
 
 describe( "Item 5: Avoid Using == with Mixed Types...", function() {
-
-	var nullIsNotUndefined = function() {
-		return null == undefined;
-	};
-	var zeroIsNotFalse = function() {
-		return 0 == false;
-	};
-	var string5isNotNumber5 = function() {
-		return '5' == 5;
-	}
-
 	it("null should not equal undefined", function() {
 		expect(nullIsNotUndefined()).toBe(false);
 	});

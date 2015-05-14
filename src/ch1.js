@@ -70,15 +70,35 @@ var ch1 = function() {
 		return {
 			checkType: checkType,
 			checkEquality: checkEquality
-		}
+		};
 	}();
+
+	var item_5 = function() {		
+		var nullIsNotUndefined = function() {
+			return null == undefined;
+		};
+		var zeroIsNotFalse = function() {
+			return 0 == false;
+		};
+		var string5isNotNumber5 = function() {
+			return '5' == 5;
+		};
+		return {
+			nullIsNotUndefined: nullIsNotUndefined,
+			zeroIsNotFalse: zeroIsNotFalse,
+			string5isNotNumber5: string5isNotNumber5
+		};
+	}
 
 	return {
 		whichJS: item_1.whichJS,
 		checkFloatingPointEquality: item_2.checkEquality,
 		point: item_3.point,
 		checkType: item_4.checkType,
-		checkStringEquality: item_4.checkEquality
+		checkStringEquality: item_4.checkEquality,
+		nullIsNotUndefined: item_5.nullIsNotUndefined,
+		zeroIsNotFalse: item_5.zeroIsNotFalse,
+		string5isNotNumber5: item_5.string5isNotNumber5
 	};
 
 }();
