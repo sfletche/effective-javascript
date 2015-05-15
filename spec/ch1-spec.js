@@ -31,45 +31,25 @@ describe( "Item 4: Prefer Primitives to Object Wrappers...", function () {
 
 describe( "Item 5: Avoid Using == with Mixed Types...", function() {
 	it("null should not equal undefined", function() {
-		expect(nullIsNotUndefined()).toBe(false);
+		expect(ch1.nullIsNotUndefined()).toBe(false);
 	});
 	it("0 should not equal false", function() {
-		expect(zeroIsNotFalse()).toBe(false);
+		expect(ch1.zeroIsNotFalse()).toBe(false);
 	});
 	it("'5' should not equal 5", function() {
-		expect(string5isNotNumber5()).toBe(false);
+		expect(ch1.string5isNotNumber5()).toBe(false);
 	});
 });
 
 describe( "Item 6: Learn the Limits of Semicolon Insertion..." , function() {
-
-	var returnTrue = function() {
-		var a=1, b=2
-		b = a
-		return a === b
-	}
-	var returnObject = function() {
-		var status = 'Success!'
-		return 
-		{
-			status: status
-		}
-	}
-	var returnOne = function() {
-		var a=1, b=2, c=3
-		b = a
-		(c = b)
-		return c
-	}
-
 	it("returnTrue should return true", function() {
-		expect(returnTrue()).toBe(true);
+		expect(ch1.returnTrue()).toBe(true);
 	})
 	it("returnObject should return an object", function() {
-		expect(returnObject().status).toBe('Success!');
+		expect(ch1.returnObject().status).toBe('Success!');
 	})
 	it("returnOne should return 1", function() {
-		expect(returnOne()).toBe(1);
+		expect(ch1.returnOne()).toBe(1);
 	})
 });
 

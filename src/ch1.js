@@ -88,7 +88,33 @@ var ch1 = function() {
 			zeroIsNotFalse: zeroIsNotFalse,
 			string5isNotNumber5: string5isNotNumber5
 		};
-	}
+	}();
+
+	var item_6 = function() {
+		var returnTrue = function() {
+			var a=1, b=2
+			b = a
+			return a === b
+		};
+		var returnObject = function() {
+			var status = 'Success!'
+			return 
+			{
+				status: status
+			}
+		};
+		var returnOne = function() {
+			var a=1, b=2, c=3
+			b = a
+			(c = b)
+			return c
+		};
+		return {
+			returnTrue: returnTrue,
+			returnObject: returnObject,
+			returnOne: returnOne
+		};
+	}();
 
 	return {
 		whichJS: item_1.whichJS,
@@ -98,7 +124,10 @@ var ch1 = function() {
 		checkStringEquality: item_4.checkEquality,
 		nullIsNotUndefined: item_5.nullIsNotUndefined,
 		zeroIsNotFalse: item_5.zeroIsNotFalse,
-		string5isNotNumber5: item_5.string5isNotNumber5
+		string5isNotNumber5: item_5.string5isNotNumber5,
+		returnTrue: item_6.returnTrue,
+		returnObject: item_6.returnObject,
+		returnOne: item_6.returnOne
 	};
 
 }();
