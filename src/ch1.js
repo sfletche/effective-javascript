@@ -116,6 +116,17 @@ var ch1 = function() {
 		};
 	}();
 
+	var item_7 = function() {
+		return {
+			aHasLengthOf1: function() {
+				return 'a'.length === 1;
+			},
+			pooHasLengthOf1: function() {
+				return '💩'.length === 1;
+			}			
+		};
+	}();
+
 	return {
 		whichJS: item_1.whichJS,
 		checkFloatingPointEquality: item_2.checkEquality,
@@ -127,7 +138,9 @@ var ch1 = function() {
 		string5isNotNumber5: item_5.string5isNotNumber5,
 		returnTrue: item_6.returnTrue,
 		returnObject: item_6.returnObject,
-		returnOne: item_6.returnOne
+		returnOne: item_6.returnOne,
+		aHasLengthOf1: item_7.aHasLengthOf1,
+		pooHasLengthOf1: item_7.pooHasLengthOf1
 	};
 
 }();

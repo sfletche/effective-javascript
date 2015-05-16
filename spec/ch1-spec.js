@@ -54,19 +54,10 @@ describe( "Item 6: Learn the Limits of Semicolon Insertion..." , function() {
 });
 
 describe( "Item 7: Think of Strings As Sequences of 16-Bit Code Units", function() {
-
-	var aHasLengthOf1 = function() {
-		return 'a'.length === 1;
-	};
-	var pooHasLengthOf1 = function() {
-		return '💩'.length === 1;
-	};
-
-
 	it("aHasLengthOf1 should return true", function() {
-		expect(aHasLengthOf1()).toBe(true);
+		expect(ch1.aHasLengthOf1()).toBe(true);
 	});
 	it("pooHasLengthOf1 should return true", function() {
-		expect(pooHasLengthOf1()).toBe(true);
+		expect(ch1.pooHasLengthOf1()).toBe(true);
 	});
 });
