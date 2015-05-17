@@ -2,34 +2,33 @@ var ch1 = function() {
 
 	// Return a function, whichJS() that returns true after determining which JS you are using
 	var item_1 = function() {
-		var amIUsingES6 = function() {
-			// check for template strings
-			var no = "Yes!";
-			return "${no}" === "Yes!";
-		};
-		var amIUsingES5 = function() {
-			// check trailing commas
-			var obj = { 
-				a: 1,
-				b: 2,
-			};
-			return true;
-		};
-		var whichJS = function() {
-			var es3 = false, 
-				es5 = false,
-				es6 = false;
-			if (amIUsingES6) {
-				es6 = true;
-			} else if(amIUsingEs5) {
-				es5 = true;
-			} else {
-				es3 = true;
-			}
-			return es3;
-		};		
 		return {
-			whichJS: whichJS
+			whichJS: function() {
+				var amIUsingES6 = function() {
+					// check for template strings
+					var no = "Yes!";
+					return "${no}" === "Yes!";
+				};
+				var amIUsingES5 =function() {
+					// check trailing commas
+					var obj = { 
+						a: 1,
+						b: 2,
+					};
+					return true;
+				};
+				var es3 = false, 
+					es5 = false,
+					es6 = false;
+				if (amIUsingES6) {
+					es6 = true;
+				} else if(amIUsingEs5) {
+					es5 = true;
+				} else {
+					es3 = true;
+				}
+				return es3;
+			}
 		};
 	}();
 
@@ -91,28 +90,25 @@ var ch1 = function() {
 	}();
 
 	var item_6 = function() {
-		var returnTrue = function() {
-			var a=1, b=2
-			b = a
-			return a === b
-		};
-		var returnObject = function() {
-			var status = 'Success!'
-			return 
-			{
-				status: status
-			}
-		};
-		var returnOne = function() {
-			var a=1, b=2, c=3
-			b = a
-			(c = b)
-			return c
-		};
 		return {
-			returnTrue: returnTrue,
-			returnObject: returnObject,
-			returnOne: returnOne
+			returnTrue: function() {
+				var a=1, b=2
+				b = a
+				return a === b
+			},
+			returnObject: function() {
+				var status = 'Success!'
+				return 
+				{
+					status: status
+				}
+			},
+			returnOne: function() {
+				var a=1, b=2, c=3
+				b = a
+				(c = b)
+				return c
+			}			
 		};
 	}();
 
