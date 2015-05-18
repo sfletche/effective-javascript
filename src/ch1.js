@@ -34,14 +34,13 @@ var ch1 = function() {
 
 	// Write function, checkEquality(), that explores the ambiguities of floating point addition
 	var item_2 = function() {
-		var checkEquality = function() {
-			var a = .1,
-				b = .2,
-				c = a + b;
-			return c === .3;
-		};
 		return {
-			checkEquality: checkEquality
+			checkEquality: function() {
+				var a = .1,
+					b = .2,
+					c = a + b;
+				return c === .3;
+			}			
 		};
 	}();
 
