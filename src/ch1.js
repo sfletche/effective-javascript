@@ -45,14 +45,13 @@ var ch1 = function() {
 	}();
 
 	// Write a function, point(x,y), that defaults to (5,5) when no arguments are provided
-	var item_3 = function() {		
-		var point = function(x, y) {
-			x = x || 5;
-			y = y || 5;
-			return { x: x, y: y };
-		};
+	var item_3 = function() {	
 		return {
-			point: point
+			point: function(x, y) {
+				x = x || 5;
+				y = y || 5;
+				return { x: x, y: y };
+			}			
 		};
 	}();
 
