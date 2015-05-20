@@ -58,15 +58,13 @@ var ch1 = function() {
 	// Write 2 functions, checkType() that determines the type of a new String object,
 	// and checkEquality(), that checks to see if 2 new String objects are equal
 	var item_4 = function() {
-		var checkType = function() {
-			return typeof new String('foo') === 'string';
-		};
-		var checkEquality = function() {
-			return new String('foo') === new String('foo');
-		};
 		return {
-			checkType: checkType,
-			checkEquality: checkEquality
+			checkType: function() {
+				return typeof new String('foo') === 'string';
+			},
+			checkEquality: function() {
+				return new String('foo') === new String('foo');
+			}
 		};
 	}();
 
