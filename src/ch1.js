@@ -68,20 +68,17 @@ var ch1 = function() {
 		};
 	}();
 
-	var item_5 = function() {		
-		var nullIsNotUndefined = function() {
-			return null == undefined;
-		};
-		var zeroIsNotFalse = function() {
-			return 0 == false;
-		};
-		var string5isNotNumber5 = function() {
-			return '5' == 5;
-		};
+	var item_5 = function() {	
 		return {
-			nullIsNotUndefined: nullIsNotUndefined,
-			zeroIsNotFalse: zeroIsNotFalse,
-			string5isNotNumber5: string5isNotNumber5
+			nullIsNotUndefined: function() {
+				return null == undefined;
+			},
+			zeroIsNotFalse: function() {
+				return 0 == false;
+			},
+			string5isNotNumber5: function() {
+				return '5' == 5;
+			}
 		};
 	}();
 
