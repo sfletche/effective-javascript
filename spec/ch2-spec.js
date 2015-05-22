@@ -1,24 +1,7 @@
 
-describe( "Item 8: Minimize Use of Globals...", function() {
-
-	var i, sum;
-	var sumArrays = function(arrays) {
-		sum = 0;
-		for (i = 0; i < arrays.lenth; i += 1) {
-			sum += sumArray(arrays[i]);
-		}
-		return sum;
-	};
-	var sumArray = function(array) {
-		sum = 0;
-		for (i = 0; i < array.length; i += 1) {
-			sum += array[i];
-		}
-		return sum;
-	}
-
+describe( "Item 8: Minimize Use of Globals...", function() {	
 	it("sumArrays([1,2], [3,4,5]) should return 15", function() {
-		expect(sumArrays[1,2], [3,4,5]).toBe(15);
+		expect(ch2.sumArrays[1,2], [3,4,5]).toBe(15);
 	});
 });	
 
