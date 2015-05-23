@@ -32,26 +32,14 @@ describe( "Item 10: Avoid with...", function() {
 });
 
 describe( "Item 11: Get Comfotable with Closures...", function() {
-
-	var create3Functions = function() {
-		var functions = [];
-		for (var i = 0; i < 3; i += 1) {
-			functions[i] = function() {
-				return i;
-			}
-		}
-		return functions;
-	};
-	var my3Functions = create3Functions();
-
 	it("my3Functions[0]() should return 0", function() {
-		expect(my3Functions[0]()).toBe(0);
+		expect(ch2.my3Functions[0]()).toBe(0);
 	});
 	it("my3Functions[1]() should return 1", function() {
-		expect(my3Functions[1]()).toBe(1);
+		expect(ch2.my3Functions[1]()).toBe(1);
 	});
 	it("my3Functions[2]() should return 2", function() {
-		expect(my3Functions[2]()).toBe(2);
+		expect(ch2.my3Functions[2]()).toBe(2);
 	});
 });
 
