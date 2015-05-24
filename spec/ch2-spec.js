@@ -45,7 +45,7 @@ describe( "Item 11: Get Comfotable with Closures...", function() {
 
 describe( "Item 12: Understand Variable Hoisting...", function() {	
 	it("checkWinner() should return true", function() {
-		expect(checkWinner()).toBe(true);
+		expect(ch2.checkWinner()).toBe(true);
 	});
 });
 
