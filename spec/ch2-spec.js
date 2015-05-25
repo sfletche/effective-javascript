@@ -49,20 +49,9 @@ describe( "Item 12: Understand Variable Hoisting...", function() {
 	});
 });
 
-describe( "Item 13: Use Immediately Invoked Function Expressions to Create Local Scopes...", function() {
-	var wrapElements =  function(a) {
-	    var result = [], i, n;
-	    for (i = 0, n = a.length; i < n; i++) {
-	        result[i] = function() { return a[i]; };
-	    }
-	    return result;
-	}
-
-	var wrapped = wrapElements([10, 20, 30, 40, 50]);
-	var f = wrapped[0];
-	
+describe( "Item 13: Use Immediately Invoked Function Expressions to Create Local Scopes...", function() {	
 	it("f() should return 10", function() {
-		expect(f()).toBe(10);
+		expect(ch2.f()).toBe(10);
 	})
 });
 
