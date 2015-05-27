@@ -1,39 +1,14 @@
 
 describe( "Item 18: Understanding the Difference between Function, Method, and Constructor Calls...", function() {
-
-	var stateYourName = function() {
-		return this.username;
-	};
-	var user = {
-		username: 'Bruce',
-		stateYourName: stateYourName
-	};
-	var User = function(username) {
-		this.username = username;
-		this.stateYourName = stateYourName;
-	};
-
-	var callingFunctions = function() {
-		return stateYourName();
-	}
-	var callingMethods = function() {
-		return stateYourName();
-	};
-	var callingConstructors = function() {
-		var user = User('Bruce');
-		return user.stateYourName;
-	};
-
 	it("callingFunctions() demonstrates why using 'this' in functions (as opposed to methods and constructors) should be avoided...", function() {
-		expect(callingFunctions()).toBe(undefined);
+		expect(ch3.callingFunctions()).toBe(undefined);
 	});
 	it("callingMethods() should be fixed so it uses an appropriate receiver...", function() {
-		expect(callingMethods()).toEqual("Bruce");
+		expect(ch3.callingMethods()).toEqual("Bruce");
 	});
 	it("callingConstructors() should be fixed so it calls the constructor correctly...", function() {
-		expect(callingConstructors()).toEqual("Bruce");
+		expect(ch3.callingConstructors()).toEqual("Bruce");
 	});
-
 });
 
 describe( "Item 19: Get comfortable Using Higher-Order Functions...", function() {
@@ -78,7 +53,7 @@ describe( "Item 20: Use call to Call methods with a Custom Receiver...", functio
 });
 
 describe( "Item 21: Use apply to Call Functions with Different Numbers of Arguments...", function() {
-	
+
 });
 
 describe( "Item 22: Use arguments to Create Variadic Functions...", function() {
