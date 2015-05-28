@@ -12,26 +12,12 @@ describe( "Item 18: Understanding the Difference between Function, Method, and C
 });
 
 describe( "Item 19: Get comfortable Using Higher-Order Functions...", function() {
-
-	var numbers = [5, 2, 3, 1, 4];
-	var reverse = function() {
-		return numbers.sort(function(x, y) {
-			return true;
-		});
-	};
-	var square = function() {
-		return numbers.map(function(x) {
-			return x;
-		});
-	};
-
 	it("reverse() should return the array [5, 4, 3, 2, 1]...", function() {
-		expect(reverse()).toEqual([5,4,3,2,1]);
+		expect(ch3.reverse()).toEqual([5,4,3,2,1]);
 	});
 	it("square() should return the array [25, 4, 9, 1, 16]...", function() {
-		expect(square()).toEqual([25,4,9,1,16]);
+		expect(ch3.square()).toEqual([25,4,9,1,16]);
 	});
-
 });
 
 describe( "Item 20: Use call to Call methods with a Custom Receiver...", function() {
