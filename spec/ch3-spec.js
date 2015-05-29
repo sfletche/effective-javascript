@@ -21,20 +21,8 @@ describe( "Item 19: Get comfortable Using Higher-Order Functions...", function()
 });
 
 describe( "Item 20: Use call to Call methods with a Custom Receiver...", function() {
-
-	var obj = {
-		entries: [],
-		addEntry: function(value) {
-			this.entries.push(value);
-		}
-	};
-	var addEntryToObj = function(addEntry, value) {
-		addEntry(value);
-	};
-	addEntryToObj(obj.addEntry, 'a');
-
 	it("How can addEntryToObj be fixed so that obj.entries.length is equal 1...", function() {
-		expect(obj.entries.length).toBe(1);
+		expect(ch3.entries.length).toBe(1);
 	})
 });
 
