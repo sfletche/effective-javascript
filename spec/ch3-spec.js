@@ -23,7 +23,7 @@ describe( "Item 19: Get comfortable Using Higher-Order Functions...", function()
 describe( "Item 20: Use call to Call methods with a Custom Receiver...", function() {
 	it("How can addEntryToObj be fixed so that obj.entries.length is equal 1...", function() {
 		expect(ch3.entries.length).toBe(1);
-	})
+	});
 });
 
 describe( "Item 21: Use apply to Call Functions with Different Numbers of Arguments...", function() {
@@ -31,7 +31,11 @@ describe( "Item 21: Use apply to Call Functions with Different Numbers of Argume
 });
 
 describe( "Item 22: Use arguments to Create Variadic Functions...", function() {
-
+	it("sumNumbers() should work no matter how many arguments it is sent...", function() {
+		expect(ch3.sumNumbers()).toBe(0);
+		expect(ch3.sumNumbers(1)).toBe(1);
+		expect(ch3.sumNumbers(1,2,3)).toBe(6);
+	});
 });
 
 describe( "Item 23: Never Modify the arguments Object...", function() {
